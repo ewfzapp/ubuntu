@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trail du Jour de l'An - Course nocturne entre amis</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background-color: #1a1a1a;
+        }
+        
+        header {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/api/placeholder/1200/400');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stars {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)),
+                        radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
+                        radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0,0,0,0)),
+                        radial-gradient(2px 2px at 90px 40px, #fff, rgba(0,0,0,0));
+            background-size: 200px 200px;
+            opacity: 0.3;
+        }
+
+        nav {
+            background-color: #000;
+            padding: 1rem;
+            border-bottom: 1px solid #333;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .info-box {
+            background-color: #2a2a2a;
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            border: 1px solid #333;
+        }
+
+        .highlight {
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        .warning {
+            border-left: 4px solid #ffd700;
+            padding-left: 1rem;
+            margin: 1rem 0;
+        }
+
+        footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            border-top: 1px solid #333;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: #ffd700;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #fff;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="stars"></div>
+        <h1>Trail du Jour de l'An</h1>
+        <p class="highlight">Une tradition entre amis depuis 2013</p>
+        <h2>Passez le cap de la nouvelle année en trail !</h2>
+        <p>Rdv le 31 décembre à 23h20 sur le parking de l'Aquagaron</p>
+        <a href="mailto:contact@traildujourdelan.fr" class="btn">Je viens courir avec vous !</a>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#concept">Le Concept</a></li>
+            <li><a href="#details">Les Détails</a></li>
+            <li><a href="#securite">Sécurité</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="concept" class="info-box">
+            <h2>Le Concept</h2>
+            <p>Le Trail du Jour de l'An (TJL), c'est un délire entre amis né en 2013 : courir ensemble le passage à la nouvelle année dans les chemins de la Vallée du Garon (69).</p>
+            <p>Pas de dossard, pas de chrono, pas de classement. Juste le plaisir de partager un moment unique avec d'autres passionnés de trail !</p>
+        </section>
+
+        <section id="details" class="info-box">
+            <h2>Les Détails</h2>
+            <ul>
+                <li><span class="highlight">Départ :</span> 23h20 précises, le 31 décembre</li>
+                <li><span class="highlight">Lieu de RDV :</span> Parking de l'Aquagaron</li>
+                <li><span class="highlight">Parcours :</span> Non balisé, dans la Vallée du Garon</li>
+                <li><span class="highlight">Important :</span> Pas de ravitaillement en cours de route, soyez autonomes !</li>
+            </ul>
+            <div class="warning">
+                <p>⚠️ Ce n'est pas une course officielle mais un rassemblement amical de trailers. Chacun participe sous sa propre responsabilité.</p>
+            </div>
+        </section>
+
+        <section id="securite" class="info-box">
+            <h2>Sécurité</h2>
+            <p>Même si c'est un événement informel, la sécurité reste primordiale. Équipement nécessaire :</p>
+            <ul>
+                <li>Lampe frontale avec piles neuves (indispensable !)</li>
+                <li>Téléphone portable chargé</li>
+                <li>Vêtements chauds et adaptés à la météo</li>
+                <li>Réserve d'eau et encas (pas de ravitaillement)</li>
+                <li>Couverture de survie conseillée</li>
+            </ul>
+        </section>
+
+        <section class="info-box">
+            <h2>Participer</h2>
+            <p>Envie de nous rejoindre pour cette aventure unique ?</p>
+            <p>Envoyez simplement un mail à l'adresse ci-dessous pour signaler votre présence :</p>
+            <p style="text-align: center;">
+                <a href="mailto:contact@traildujourdelan.fr" class="btn">contact@traildujourdelan.fr</a>
+            </p>
+        </section>
+    </div>
+
+    <footer>
+        <p>Trail du Jour de l'An - Une tradition amicale depuis 2013</p>
+        <p>Vallée du Garon (69)</p>
+        <p><a href="mailto:contact@traildujourdelan.fr" style="color: #ffd700;">contact@traildujourdelan.fr</a></p>
+    </footer>
+</body>
+</html>
